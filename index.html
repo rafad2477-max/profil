@@ -1,63 +1,120 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
-    <title>Profil Kartu Digital</title>
-
-    <!--HUBUNGKAN EXSTERNAL CSS DI SINI-->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- TULIS INTERNAL CSS DISINI-->
-    <style>
-        .avatar-placeholder{
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 12px auto;
-            border-radius: 50%;
-            background-color: #6084be;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .nama siswa{
-            font-size: 1.25rem;
-            color: #9caae7;
-            margin-bottom: 4px;
-        }
-
-        .jurusan{
-            font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 0;
-        }
-
-        .quote {
-            font-style: italic;
-            font-size: 0.85rem;
-            color: #475569
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Undangan Pernikahan Romeo &amp; Juliet</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="card">
-        <div class="avatar-placeholder">FOTO</div>
-        <h1 class="nama-siswa">[M. Rafa Akbar]</h1>
-        <p class="jurusan">[Jurusan / Kelas Anda]</p>
+  <header class="hero">
+    <p class="hero-top">Satu malam saja. Live di Bandung.</p>
+    <h1 class="names">
+      <span>Romeo</span>
+      <span class="amp">&amp;</span>
+      <span>Juliet</span>
+    </h1>
+    <p class="hero-date">Sabtu, 20 Desember 2026</p>
+    <a class="btn" href="#rsvp">Amankan tiket Anda</a>
+  </header>
 
-        <div class="info-section">
-            <p class="status-badge" style="display: inline-blok; background-color:#dcfce7; color:#15803d; padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size:0.8rem; ">Aktif Belajar</p>
-            <p class="quote">"Konsistensi adalah kunci menguasai pemrograman."</p>
+  <div class="strip" aria-hidden="true">Pernikahan Romeo &amp; Juliet &nbsp;/&nbsp; 20.12.2026 &nbsp;/&nbsp; Bandung</div>
+
+  <main>
+    <section class="section intro">
+      <p>Dua orang, satu panggung, dan semua teman terbaik kami di barisan depan. Kami ingin Anda ada di sana.</p>
+    </section>
+
+    <section class="section duo">
+      <figure class="photo photo-wide">
+        <img src="1001558404601828955.jpg" alt="Foto Romeo dan Juliet berdua">
+        <figcaption>Romeo &amp; Juliet</figcaption>
+      </figure>
+    </section>
+
+    <section class="section lineup">
+      <h2>Line-up malam ini</h2>
+      <div class="lineup-grid">
+        <article>
+          <figure class="photo">
+            <img src="amba.jpg" alt="Foto Romeo Pratama">
+            <figcaption>Romeo</figcaption>
+          </figure>
+          <h3>Romeo Pratama</h3>
+          <p>Putra kedua dari<br>Bapak Hendra Pratama &amp; Ibu Sari Dewi</p>
+        </article>
+        <article>
+          <figure class="photo">
+            <img src="femboy.jpg" alt="Foto Juliet Putri">
+            <figcaption>Juliet</figcaption>
+          </figure>
+          <h3>Juliet Putri</h3>
+          <p>Putri pertama dari<br>Bapak Wahyu Santoso &amp; Ibu Lestari</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section event">
+      <h2>Jadwal acara</h2>
+
+      <article class="ticket">
+        <div class="ticket-main">
+          <h3>Akad Nikah</h3>
+          <p>Masjid Agung Bandung<br>Jl. Dalem Kaum No. 14, Bandung</p>
         </div>
+        <div class="ticket-stub">
+          <p class="day">20 Des 2026</p>
+          <p class="time">08.00 WIB</p>
+        </div>
+      </article>
 
-        <!-- ELEMEN UNTUK INLINE CSS-->
-        <a href="#" class="btn-kontak" style="display: block; margin-top: 16px; padding: 10px; background-color: #2563eb; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 500;">Hubungi Saya</a>
-    </div>
+      <article class="ticket">
+        <div class="ticket-main">
+          <h3>Resepsi</h3>
+          <p>Gedung Sasana Budaya<br>Jl. Ir. H. Juanda No. 55, Bandung</p>
+        </div>
+        <div class="ticket-stub">
+          <p class="day">20 Des 2026</p>
+          <p class="time">11.00 WIB</p>
+        </div>
+      </article>
+
+      <a class="btn btn-outline" href="https://maps.google.com" target="_blank" rel="noopener">Buka peta lokasi</a>
+    </section>
+
+    <section class="section rsvp" id="rsvp">
+      <h2>Konfirmasi kehadiran</h2>
+      <p class="lead">Pintu dibuka untuk yang konfirmasi sebelum 10 Desember 2026.</p>
+      <form class="form" action="#" method="post">
+        <label for="nama">Nama lengkap</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="hadir">Kehadiran</label>
+        <select id="hadir" name="hadir" required>
+          <option value="">Pilih salah satu</option>
+          <option>Hadir</option>
+          <option>Tidak dapat hadir</option>
+        </select>
+
+        <label for="jumlah">Jumlah tamu</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" max="5" value="1">
+
+        <label for="ucapan">Ucapan dan doa</label>
+        <textarea id="ucapan" name="ucapan" rows="4"></textarea>
+
+        <button type="submit" class="btn">Kirim konfirmasi</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Terima kasih sudah menjadi bagian dari malam ini.</p>
+    <p class="sign">Romeo &amp; Juliet</p>
+  </footer>
 
 </body>
 </html>
